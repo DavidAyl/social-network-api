@@ -4,7 +4,7 @@ module.exports = {
     // Get all Users
     getUsers(req, res) {
         User.find()
-            .then((Users) => res.json(Users))
+            .then((users) => res.json(users))
             .catch((err) => res.status(500).json(err));
     },
     // Get a User

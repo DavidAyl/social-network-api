@@ -1,6 +1,6 @@
 const { Schema, model } = require('mongoose');
-const thoughtSchema = require('./Thought');
-const friendSchema = require('./Friend');
+// const thoughtSchema = require('./Thought');
+// const friendSchema = require('./Friend');
 
 
 // Schema to create User model
@@ -20,8 +20,8 @@ const userSchema = new Schema(
             max_length: 50,
             match: [/.+@.+\..+/, 'Must be an email address!'],
         },
-        friends: [friendSchema],
-        thoughts: [thoughtSchema],
+        // friends: [friendSchema],
+        // thought: thoughtSchema,
     },
     {
         toJSON: {
