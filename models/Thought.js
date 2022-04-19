@@ -15,7 +15,7 @@ const reactionSchema = new Schema({
     },
     username: {
         type: String,
-        required: true
+        required: true,
     },
     createdAt: {
         type: Date,
@@ -33,13 +33,15 @@ const thoughtSchema = new Schema(
         },
 
         createdAt: {
-            type: String,
-            timestamps: true
+            type: Date,
+            default: Date.now
         },
         username: {
             type: String,
-            required: true,
+            required: true
         },
+
+
         reactions: [reactionSchema],
     },
     {
@@ -50,5 +52,6 @@ const thoughtSchema = new Schema(
 );
 
 const Thought = model('thought', thoughtSchema);
+const Reaction = model('reaction', reactionSchema);
 
-module.exports = Thought;
+module.exports = Thought, Reaction;
