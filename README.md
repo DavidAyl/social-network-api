@@ -1,5 +1,9 @@
 # Social-Network-Api
 ## David Aylward
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
 <hr>
 
 ##  Table Of Contents
